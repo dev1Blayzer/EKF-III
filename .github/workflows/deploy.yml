@@ -1,0 +1,23 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-firebase:
+    name: Deploy Firebase
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      # - run: echo -e "@madnesslabs:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${{ secrets.PERSONAL_ACCESS_TOKEN }}" > ~/.npmrc
+      - run: npm install --verbose
+      - name: Setup Environment
+        run: npm run firebase:live -- --token "${{ secrets.FIREBASE_TOKEN }}"
+      - name: Setup Environment
+        run: npm run env live
+      - name: Deploy to Firebase
+        run: npm run deploy -- --token "${{ secrets.FIREBASE_TOKEN }}"

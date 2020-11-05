@@ -1,0 +1,46 @@
+{
+  "name": "@madnesslabs/fireenjin-app",
+  "private": false,
+  "version": "1.0.0",
+  "description": "The FireEnjin app boilerplate",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "build:prerender": "stencil build --prerender",
+    "firebase:live": "firebase use live",
+    "firebase:local": "firebase use local",
+    "deploy": "npm run build && firebase deploy",
+    "deploy:local": "npm run env:local && npm run deploy",
+    "deploy:live": "npm run env:live && npm run deploy",
+    "env": "fireenjin env",
+    "env:local": "npm run env local && firebase use local",
+    "env:live": "npm run env live && firebase use live",
+    "generate": "stencil generate",
+    "start": "npm run env local && stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch"
+  },
+  "dependencies": {
+    "@ionic-native/core": "^5.29.0",
+    "@ionic-native/facebook": "^5.29.0",
+    "@ionic-native/geolocation": "^5.29.0",
+    "@ionic-native/google-plus": "^5.29.0",
+    "@ionic-native/social-sharing": "^5.29.0",
+    "@ionic-native/twitter-connect": "^5.29.0",
+    "@ionic/core": "^5.4.1",
+    "@madnesslabs/fireenjin-backend": "^1.0.3",
+    "@madnesslabs/fireenjin-components": "^1.0.2",
+    "firebase": "^8.0.0"
+  },
+  "devDependencies": {
+    "@madnesslabs/fireenjin": "^1.4.0",
+    "@stencil/core": "~2.0.3",
+    "firebase-tools": "^8.11.2",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.9.7"
+  }
+}

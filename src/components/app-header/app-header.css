@@ -1,0 +1,62 @@
+app-header ion-button.menu-button {
+  position: relative;
+  display: none;
+  height: 45px;
+  width: 45px;
+  --height: 45px;
+  --width: 45px;
+  text-decoration: none;
+  z-index: 9;
+}
+
+app-header ion-button.menu-button img {
+  margin-left: 5px;
+  height: 60px;
+  width: 60px;
+}
+
+app-header ion-button.menu-button ion-icon {
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  height: 35px;
+  width: 35px;
+  color: #ffffff;
+}
+
+app-header ion-buttons ion-button {
+  height: 35px;
+  width: 60px;
+}
+
+app-header ion-buttons ion-button a,
+app-header ion-buttons ion-button .button-inner,
+app-header ion-buttons ion-button .button-text,
+app-header ion-buttons ion-button ion-icon {
+  padding: 0;
+  height: 35px;
+  width: 60px;
+}
+
+app-header ion-title {
+  font-family: var(--ion-font-family) !important;
+  text-align: center;
+}
+
+app-header ion-title img {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+  app-header ion-button.menu-button {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  app-header .toolbar-title img {
+    height: 40px;
+  }
+}

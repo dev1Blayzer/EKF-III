@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { AuthService } from "./helpers/auth";
 import { DatabaseService } from "./helpers/database";
+import { Sdk } from "@dev1blayzer/eatkidfriendly-backend/dist/sdk";
 export namespace Components {
     interface AppDashboard {
         "auth": AuthService;
@@ -18,6 +19,7 @@ export namespace Components {
     interface AppLogin {
         "auth": AuthService;
         "config": any;
+        "sdk": Sdk;
     }
     interface AppProfile {
         "auth": AuthService;
@@ -76,6 +78,7 @@ declare namespace LocalJSX {
     interface AppLogin {
         "auth"?: AuthService;
         "config"?: any;
+        "sdk"?: Sdk;
     }
     interface AppProfile {
         "auth"?: AuthService;

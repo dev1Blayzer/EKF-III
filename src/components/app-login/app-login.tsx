@@ -1,3 +1,5 @@
+import { User } from "@dev1blayzer/eatkidfriendly-backend";
+import { Sdk } from "@dev1blayzer/eatkidfriendly-backend/dist/sdk";
 import {
   Component,
   ComponentInterface,
@@ -15,8 +17,10 @@ import { AuthService } from "../../helpers/auth";
 export class AppLogin implements ComponentInterface {
   @Prop() auth: AuthService;
   @Prop() config: any = {};
+  @Prop() sdk: Sdk;
 
   @State() error: string;
+  @State() user: Partial<User>;
 
   async login(type: string) {
     let res;
@@ -31,6 +35,13 @@ export class AppLogin implements ComponentInterface {
     }
   }
 
+  
+
+  async componentDidLoad(){
+    const {user} = await this.sdk.findUser({userId:"428jhJDdCyVmd6KjH1Np"});
+    this.user = user;
+  }
+
   render() {
     return [
       <app-header pageTitle="Login to FireEnjin"></app-header>,
@@ -39,7 +50,7 @@ export class AppLogin implements ComponentInterface {
           {this.error && <ion-label color="danger">{this.error}</ion-label>}
           <ion-button color="dark">
             <ion-icon slot="start" name="logo-github" />
-            <ion-label>Sign-in With Github</ion-label>
+    <ion-label>{this.user?.given_name}, Sign-in With Github</ion-label>
           </ion-button>
           <my-component></my-component>
         </ion-card>

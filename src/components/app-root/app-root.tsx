@@ -1,7 +1,7 @@
 import { ComponentInterface, Build, Component, Listen, h } from "@stencil/core";
 import { GraphQLClient } from "graphql-request";
-import "@madnesslabs/fireenjin-components";
-import { getSdk, Sdk } from "@madnesslabs/fireenjin-backend/dist/sdk";
+import "@dev1blayzer/eatkidfriendly-components";
+import { getSdk, Sdk } from "@dev1blayzer/eatkidfriendly-backend/dist/sdk";
 
 import env from "../../helpers/env";
 import { AuthService } from "../../helpers/auth";

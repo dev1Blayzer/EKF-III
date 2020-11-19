@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "fireenjin-live",
-    "live": "fireenjin-live",
-    "local": "fireenjin-live"
+    "default": "eatkidfriendly",
+    "live": "eatkidfriendly",
+    "local": "eatkidfriendly"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@madnesslabs/fireenjin-app",
+  "name": "@dev1blayzer/ekf-iii",
   "private": false,
   "version": "1.0.0",
   "description": "The FireEnjin app boilerplate",
@@ -24,21 +24,21 @@
     "test.watch": "stencil test --spec --e2e --watch"
   },
   "dependencies": {
+    "@dev1blayzer/eatkidfriendly-components": "^1.0.4",
     "@ionic-native/core": "^5.29.0",
     "@ionic-native/facebook": "^5.29.0",
     "@ionic-native/geolocation": "^5.29.0",
     "@ionic-native/google-plus": "^5.29.0",
     "@ionic-native/social-sharing": "^5.29.0",
     "@ionic-native/twitter-connect": "^5.29.0",
-    "@ionic/core": "^5.4.1",
-    "@madnesslabs/fireenjin-backend": "^1.0.3",
-    "@madnesslabs/fireenjin-components": "^1.0.2",
-    "firebase": "^8.0.0"
+    "@ionic/core": "^5.4.4",
+    "@dev1blayzer/eatkidfriendly-backend": "^1.0.0",
+    "firebase": "^8.0.2"
   },
   "devDependencies": {
     "@madnesslabs/fireenjin": "^1.4.0",
     "@stencil/core": "~2.0.3",
-    "firebase-tools": "^8.11.2",
+    "firebase-tools": "^8.16.1",
     "rollup-plugin-node-polyfills": "^0.2.1",
     "rollup-plugin-typescript": "^1.0.1",
     "typescript": "^3.9.7"

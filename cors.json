@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["https://fireenjin.madnesslabs.net"],
+    "origin": ["https://eatkidfriendly.web.app"],
     "method": ["GET"],
     "maxAgeSeconds": 3600
   }

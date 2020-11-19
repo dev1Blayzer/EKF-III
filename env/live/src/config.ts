@@ -4,7 +4,7 @@ export default {
     url: "https://eatkidfriendly.web.app"
   },
   graphql: {
-    url: "https://eatkidfriendly.appspot.com"
+    url: "https://eatkidfriendly.uc.r.appspot.com"
   },
   functions: {
     url: "https://us-central1-eatkidfriendly.cloudfunctions.net"

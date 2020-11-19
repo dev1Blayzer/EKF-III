@@ -7,16 +7,17 @@ export default {
     url: "http://localhost:4000"
   },
   functions: {
-    url: "https://us-central1-fireenjin-live.cloudfunctions.net"
+    url: "https://us-central1-eatkidfriendly.cloudfunctions.net"
   },
   firebase: {
-    apiKey: "AIzaSyAz5C9TRxQ9bUkTwVaD6Yc-Iisw57UslPM",
-    authDomain: "fireenjin-live.firebaseapp.com",
-    databaseURL: "https://fireenjin-live.firebaseio.com",
-    projectId: "fireenjin-live",
-    storageBucket: "fireenjin-live.appspot.com",
-    messagingSenderId: "756564610596",
-    appId: "1:756564610596:web:4fdf5a6ddfd319a93392b1",
-    measurementId: "G-Q0ZHGFCQFN"
+    apiKey: "AIzaSyDdFp6fObhNm1ARDqjtLwzTpgHeYfgtx6o",
+    authDomain: "eatkidfriendly.firebaseapp.com",
+    databaseURL: "https://eatkidfriendly.firebaseio.com",
+    projectId: "eatkidfriendly",
+    storageBucket: "eatkidfriendly.appspot.com",
+    messagingSenderId: "58447159459",
+    appId: "1:58447159459:web:c19231f8b16be6e0c15f16",
+    measurementId: "G-ZND17K4NQL"
   }
+
 };
